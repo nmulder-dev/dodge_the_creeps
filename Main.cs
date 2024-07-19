@@ -39,7 +39,7 @@ public partial class Main : Node
 
 	private void OnScoreTimerTimeout()
 	{
-		// Replace with function body.
+		// This change to test git commit
 	}
 }
 
