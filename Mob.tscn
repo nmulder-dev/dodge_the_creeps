@@ -1,0 +1,63 @@
+[gd_scene load_steps=9 format=3 uid="uid://bbh1r2pwyiknd"]
+
+[ext_resource type="Texture2D" uid="uid://c1tjoneplpji2" path="res://art/enemyFlyingAlt_1.png" id="1_4lxjp"]
+[ext_resource type="Script" path="res://Mob.cs" id="1_bw8ty"]
+[ext_resource type="Texture2D" uid="uid://dn75ipq86bg8i" path="res://art/enemyFlyingAlt_2.png" id="2_8wy17"]
+[ext_resource type="Texture2D" uid="uid://dphw5ijdky1n8" path="res://art/enemySwimming_1.png" id="3_jrpys"]
+[ext_resource type="Texture2D" uid="uid://klctj1uxvjbt" path="res://art/enemySwimming_2.png" id="4_6j4ij"]
+[ext_resource type="Texture2D" uid="uid://c2m5ud7x4vgb4" path="res://art/enemyWalking_1.png" id="5_23rwi"]
+[ext_resource type="Texture2D" uid="uid://cepifxgmjlqwk" path="res://art/enemyWalking_2.png" id="6_c8fx3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qc0ml"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_4lxjp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_8wy17")
+}],
+"loop": true,
+"name": &"fly",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_jrpys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_6j4ij")
+}],
+"loop": true,
+"name": &"swim",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_23rwi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_c8fx3")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="Mob" type="RigidBody2D"]
+position = Vector2(202, 224)
+collision_mask = 0
+gravity_scale = 1.66533e-16
+script = ExtResource("1_bw8ty")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.75, 0.75)
+sprite_frames = SubResource("SpriteFrames_qc0ml")
+animation = &"walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="OnVisibleOnScreenNotifier2DScreenExited"]
