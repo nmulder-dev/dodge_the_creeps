@@ -1,6 +1,6 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dodge_the_creeps", "dodge_the_creeps.csproj", "{4F24419F-60AB-41D6-9FC1-6DE853C71B5A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dodge_the_creeps", "dodge_the_creeps.csproj", "{A0480902-78A4-40F3-9792-972F74264F80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,11 +9,11 @@ Global
 	ExportRelease|Any CPU = ExportRelease|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4F24419F-60AB-41D6-9FC1-6DE853C71B5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F24419F-60AB-41D6-9FC1-6DE853C71B5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F24419F-60AB-41D6-9FC1-6DE853C71B5A}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
-		{4F24419F-60AB-41D6-9FC1-6DE853C71B5A}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
-		{4F24419F-60AB-41D6-9FC1-6DE853C71B5A}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
-		{4F24419F-60AB-41D6-9FC1-6DE853C71B5A}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+		{A0480902-78A4-40F3-9792-972F74264F80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0480902-78A4-40F3-9792-972F74264F80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0480902-78A4-40F3-9792-972F74264F80}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{A0480902-78A4-40F3-9792-972F74264F80}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{A0480902-78A4-40F3-9792-972F74264F80}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{A0480902-78A4-40F3-9792-972F74264F80}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
 	EndGlobalSection
 EndGlobal
